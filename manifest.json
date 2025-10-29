@@ -1,0 +1,13 @@
+{
+  "background_color": "#ffffff",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "Voizi AI",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "Voizi",
+  "start_url": "/https://ayushsisodiya2011-alt.github.io/Voizi-ai-app/",
+  "theme_color": "#ffffff",
+  "id": "Voizi",
+  "description": "A modern Hindi and English AI voice generator by Ayush."
+}
