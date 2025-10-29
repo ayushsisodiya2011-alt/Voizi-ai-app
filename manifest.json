@@ -2,9 +2,9 @@
   "name": "Voizi",
   "short_name": "Voizi",
   "description": "AI voice assistant progressive web app",
-  "start_url": "./index.html",
+  "start_url": "/Voizi-ai-app/index.html",
   "display": "standalone",
-  "background_color": "#ffffff",
+  "background_color": "#27b3ce",
   "theme_color": "#6B46FF",
   "orientation": "portrait",
   "icons": [
@@ -23,5 +23,17 @@
       "sizes": "512x512",
       "type": "image/png"
     }
+  ],
+  "id": "Voizi",
+  "dir": "ltr",
+  "scope": "Voizi",
+  "lang": "en",
+  "display_override": [
+    "window-controls-overlay"
+  ],
+  "categories": [
+    "entertainment",
+    "social",
+    "utilities"
   ]
 }
