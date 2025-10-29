@@ -4,9 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title>Voizi</title>
-  <link rel="manifest" href="/manifest.json">
+
+  <!-- ✅ Correct manifest path + meta description -->
+  <link rel="manifest" href="manifest.json">
   <meta name="theme-color" content="#6B46FF">
-  <link rel="icon" href="/icons/icon-192.png">
+  <meta name="description" content="Voizi – Friendly AI Voice App that brings voice and chat together.">
+  
+  <link rel="icon" href="icons/icon-192.png">
+
   <style>
     body {
       margin: 0;
@@ -52,15 +57,21 @@
       cursor: pointer;
     }
   </style>
+
   <script>
+    // ✅ Service Worker Registration
     if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('/service-worker.js').catch(()=>{});
+      navigator.serviceWorker.register('service-worker.js').then(() => {
+        console.log('Service Worker Registered');
+      }).catch(() => {
+        console.log('Service Worker Failed');
+      });
     }
   </script>
 </head>
 <body>
   <div>
-    <div class="logo"><img src="/icons/icon-192.png" alt="Voizi Logo"></div>
+    <div class="logo"><img src="icons/icon-192.png" alt="Voizi Logo"></div>
     <h1>Voizi</h1>
     <p>Your smart voice assistant.</p>
     <button onclick="alert('Voizi is ready!')">Start</button>
